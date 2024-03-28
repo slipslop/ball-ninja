@@ -2,12 +2,12 @@ package org.example;
 
 import javax.swing.JFrame;
 
-public class Frame {
+public class Frame extends JFrame {
     public Frame() {
-        JFrame frame = new JFrame("a window");
-        frame.setResizable(false);
-        frame.setSize(640, 480);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
+        setTitle("a window");
+        setResizable(false);
+        setSize(640, 480);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
     }
 }
